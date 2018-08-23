@@ -1,0 +1,63 @@
+@import "eyes.css";
+@import "mickeymouse.css";
+/* @import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"); */
+
+p::first-letter {
+  font-size: 150%;
+  color: steelblue;
+  font-family: cursive;
+}
+
+p::first-line {
+  font-style: italic;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+
+p {
+  font-size: 150%;
+}
+
+#pringles {
+  letter-spacing: 10px;
+  color: red;
+}
+
+.moustache {
+  width: 180px;
+  height: 180px;
+  color: steelblue;
+  position: absolute;
+  border-radius: 50%;
+  top: 150px;
+  left: 150px;
+  box-shadow:
+    150px 240px 0 0 currentColor,
+    300px 240px 0 0 currentColor;
+}
+
+.moustache::before {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: 85px;
+  left: 20px;
+  content: ""; /* set to empty string so it shows up */
+  border-bottom: solid 180px currentColor;
+  border-radius: 0 0 0 100%;
+  transform: rotate(-60deg);
+  transform-origin: 210px;
+}
+
+.moustache::after {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: 85px;
+  left: 380px;
+  content: ""; /* set to empty string so it shows up */
+  border-bottom: solid 180px currentColor;
+  border-radius: 0 0 100% 0;
+  transform: rotate(60deg);
+  transform-origin: left 235px;
+}
